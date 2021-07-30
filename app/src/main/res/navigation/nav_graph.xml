@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.platzi.misrecetas.view.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recetasSencillasFragment"
+            app:destination="@+id/navRecetasSencillasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navRecetasSencillasFragment"
+        android:name="com.platzi.misrecetas.view.fragments.RecetasSencillasFragment"
+        android:label="fragment_recetas_sencillas"
+        tools:layout="@layout/fragment_recetas_sencillas" >
+        <action
+            android:id="@+id/action_recetasSencillasFragment_to_RecetasComplejasFragment"
+            app:destination="@id/navRecetasComplejasFragment" />
+        <action
+            android:id="@+id/action_navRecetasSencillasFragment_to_detailRecetasSencillasFragment"
+            app:destination="@id/detailRecetasSencillasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navRecetasComplejasFragment"
+        android:name="com.platzi.misrecetas.view.fragments.RecetasComplejasFragment"
+        android:label="fragment_complejas"
+        tools:layout="@layout/fragment_complejas" >
+        <action
+            android:id="@+id/action_recetasComplejasFragment_to_arrocesFragment"
+            app:destination="@id/navArrocesFragment" />
+        <action
+            android:id="@+id/action_navRecetasComplejasFragment_to_detailRecetasComplejasFragment"
+            app:destination="@id/detailRecetasComplejasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navArrocesFragment"
+        android:name="com.platzi.misrecetas.view.fragments.ArrocesFragment"
+        android:label="fragment_arroces"
+        tools:layout="@layout/fragment_arroces" >
+        <action
+            android:id="@+id/action_arrocesFragment_to_crepesFragment"
+            app:destination="@id/navCrepesFragment" />
+        <action
+            android:id="@+id/action_navArrocesFragment_to_detailArrocesFragment"
+            app:destination="@id/detailArrocesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navCrepesFragment"
+        android:name="com.platzi.misrecetas.view.fragments.CrepesFragment"
+        android:label="fragment_crepes"
+        tools:layout="@layout/fragment_crepes" >
+        <action
+            android:id="@+id/action_navCrepesFragment_to_detailCrepesFragment"
+            app:destination="@id/detailCrepesFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/detailRecetasSencillasFragment"
+        android:name="com.platzi.misrecetas.view.fragments.DetailRecetasSencillasFragment"
+        android:label="detailRecetasSencillasFragment"
+        tools:layout="@layout/detail_fragment_recetas_sencillas"/>
+    <dialog
+        android:id="@+id/detailRecetasComplejasFragment"
+        android:name="com.platzi.misrecetas.view.fragments.DetailRecetasComplejasFragment"
+        android:label="detailRecetasComplejasFragment"
+        tools:layout="@layout/detail_fragment_recetas_complejas"/>
+    <dialog
+        android:id="@+id/detailArrocesFragment"
+        android:name="com.platzi.misrecetas.view.fragments.DetailArrocesFragment"
+        android:label="detailArrocesFragment"
+        tools:layout="@layout/detail_fragment_arroces"/>
+    <dialog
+        android:id="@+id/detailCrepesFragment"
+        android:name="com.platzi.misrecetas.view.fragments.DetailCrepesFragment"
+        android:label="detailCrepesFragment"
+        tools:layout="@layout/detail_fragment_crepes"/>
+
+</navigation>

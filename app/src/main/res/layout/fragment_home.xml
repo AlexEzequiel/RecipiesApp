@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvendida/o a esta Aplicación"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/teal_200"
+                android:textStyle="bold"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_parrafo">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Esta aplicación esta separada por 4 categorias principales, las cuales tienen subcategorias que pueden incluirse en otra categoria."
+                android:layout_gravity="center_horizontal"
+                />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/imagen_home_sencillas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recetas Sencillas:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esta incluye recetas como salsas,postres faciles, algunas ensaladas, entradas y preparaciones faciles"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/imagen_home_arroces"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroces:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esta incluye recetas de Arroces solamente"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/imagen_home_complejas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recetas Complejas:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esta incluye recetas como ensaladas mas complejas, postres complejos y otras recetas mas complicadascon pollo, cerdo y carne de res"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/imagen_home_crepes"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crepes: "
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esta incluye recetas de Crepes, tanto su masa como algunos rellenos"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

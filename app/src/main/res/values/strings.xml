@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MisRecetas</string>
+    <string name="textIntro">Esta aplicación esta separada por 4 categorias principales,
+        las cuales tienen subcategorias que pueden incluirse en otra categoria.</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/navRecetasSencillasFragment"
+        android:title="Recetas Sencillas"
+        android:icon="@drawable/ic_fastfood"/>
+    <item
+        android:id="@+id/navArrocesFragment"
+        android:title="Arroces"
+        android:icon="@drawable/ic_vector_asset_arroz"/>
+    <item
+        android:id="@+id/navRecetasComplejasFragment"
+        android:title="Recetas Complejas"
+        android:icon="@drawable/ic_menu_book"/>
+    <item
+        android:id="@+id/navCrepesFragment"
+        android:title="Crepes"
+        android:icon="@drawable/ic_vector_asset_crepe"/>
+
+</menu>
